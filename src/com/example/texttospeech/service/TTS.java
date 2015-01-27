@@ -11,7 +11,6 @@ import android.os.IBinder;
 import android.speech.tts.TextToSpeech;
 
 public class TTS extends Service implements TextToSpeech.OnInitListener {
-    
 
     private TextToSpeech mTts;
     //private String spokenText;

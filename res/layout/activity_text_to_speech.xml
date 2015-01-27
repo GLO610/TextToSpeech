@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:ems="10" >
 
@@ -20,46 +21,56 @@
     </EditText>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/Button03"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_alignRight="@+id/editText1"
-        android:layout_below="@+id/editText1"
-        android:layout_marginTop="22dp"
-        android:onClick="speakText"
-        android:text="Speak" />
-
-    <Button
-        android:id="@+id/Button01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignRight="@+id/button1"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="14dp"
-        android:onClick="startRepeatingTimer"
-        android:text="SetAlarm" />
+        android:layout_alignLeft="@+id/Button02"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Button02"
+        android:layout_marginBottom="78dp"
+        android:onClick="onetimeTimer"
+        android:text="OneTimeAlarm" />
 
     <Button
         android:id="@+id/Button02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/Button03"
         android:layout_alignLeft="@+id/Button01"
-        android:layout_alignRight="@+id/Button01"
-        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
         android:onClick="cancelRepeatingTimer"
         android:text="CancelAlarm" />
 
     <Button
-        android:id="@+id/Button03"
+        android:id="@+id/Button01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Button02"
-        android:layout_alignRight="@+id/Button02"
-        android:layout_below="@+id/Button02"
-        android:layout_marginTop="24dp"
-        android:onClick="onetimeTimer"
-        android:text="OneTimeAlarm" />
+        android:layout_above="@+id/Button02"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:onClick="startRepeatingTimer"
+        android:text="SetAlarm" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button01"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:onClick="speakText"
+        android:text="Speak" />
+
+	<Spinner
+	    android:id="@+id/spinner1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/button1"
+	    android:layout_alignLeft="@+id/button1"
+	    android:layout_marginBottom="20dp"
+	    android:entries="@array/language_array"
+	    />
+
 
 </RelativeLayout>
